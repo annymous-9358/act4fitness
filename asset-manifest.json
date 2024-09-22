@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/act4fitness/static/css/main.d39118a9.css",
+    "main.js": "/act4fitness/static/js/main.f0446dbd.js",
+    "index.html": "/act4fitness/index.html",
+    "main.d39118a9.css.map": "/act4fitness/static/css/main.d39118a9.css.map",
+    "main.f0446dbd.js.map": "/act4fitness/static/js/main.f0446dbd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d39118a9.css",
+    "static/js/main.f0446dbd.js"
+  ]
+}
