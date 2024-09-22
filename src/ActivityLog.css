@@ -1,0 +1,23 @@
+.activity-log {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .activity-log th, .activity-log td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .activity-log th {
+    background-color: #f2f2f2;
+  }
+  
+  @media (min-width: 768px) {
+    .activity-log {
+      width: 70%;
+    }
+  }
+  

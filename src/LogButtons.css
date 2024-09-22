@@ -1,0 +1,43 @@
+.log-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.log-step-form,
+.log-activity-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.log-step-form input,
+.log-activity-form input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 300px;
+}
+
+.log-step-form button,
+.log-activity-form button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e23744;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+}
+
+.log-step-form button:hover,
+.log-activity-form button:hover {
+    background-color: #c12d3a;
+}

@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5; /* Light grey background color */
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: lavender; /* Slightly transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #e23744;
   color: white;
+  border-radius: 10px 10px 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+.header h1 {
+  margin: 0;
+  font-size: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.stats-link {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.stats-link:hover {
+  background-color: white;
+  color: #e23744;
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.stats-section {
+  flex: 1;
+  background-color: lavender; /* Transparent background for the left section */
+  padding: 20px;
+ 
+  margin-right: 20px;
+  
+}
+
+.activity-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activity-log {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.activity-log table {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-log th,
+.activity-log td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.activity-log th {
+  background-color: #e23744;
+  color: white;
+  font-weight: bold;
+}
+
+.log-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.log-step-form,
+.log-activity-form {
+  display: flex;
+  align-items: center;
+}
+
+.log-step-form input,
+.log-activity-form input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.log-step-form button,
+.log-activity-form button {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e23744;
+  color: white;
+  cursor: pointer;
+}
+
+.log-step-form button:hover,
+.log-activity-form button:hover {
+  background-color: #c12d3a;
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.stat-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.stats-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.stats-form input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+.stats-form button {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 300px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.stats-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .stats-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .log-buttons {
+    flex-direction: column;
   }
 }
